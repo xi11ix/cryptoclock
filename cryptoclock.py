@@ -9,8 +9,8 @@ class Clock:
     
     # Function to initialize the clock.
     def __init__(self, parent):
-        self.btc_img = ImageTk.PhotoImage(Image.open("btc_logo.png").resize((50,50)))
-        self.eth_img = ImageTk.PhotoImage(Image.open("eth-diamond.png").resize((35,50)))
+        self.btc_img = ImageTk.PhotoImage(Image.open("imgs/btc_logo.png").resize((50,50)))
+        self.eth_img = ImageTk.PhotoImage(Image.open("imgs/eth-diamond.png").resize((35,50)))
         self.clock_label = tkinter.Label(parent, text = datetime.datetime.now().strftime("%H:%M"), font = "Areal 65", foreground="white", background="black")
         self.clock_label.pack(fill=tkinter.X)
         self.label_btc = tkinter.Label(parent, image=self.btc_img, background="Black")
